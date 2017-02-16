@@ -9,18 +9,11 @@ footer {
 	background-color: #c1c1c1;
 	padding: 25px;
 	margin-top: 60px;
-	margin-bottom: 60px;
  }
-
-/* Add style to the module links */
-.col-sm-4 {
-	height: 100px;
-}
 
 /* Add spacing and color to the module names */
 a h4 {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	background-color: #a4c2f4;
-	height: 80px;
 }
