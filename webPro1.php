@@ -15,9 +15,18 @@ include ('includes/header.html');
 <div class="row">
     <div class="col-sm-4">
     <div class="thumbnail">
-      <a href=".\shop\shop_intro.html"><h4>Sports shop website</h4></a>
+      <a href="#"><h4>Lab exercises</h4></a>
       <div class="caption">
-      	<p><b>For this assigment the goal was to create a website that had the following;</b></p>
+      	<p>A website had to be created where a user could order goods. The user needed to enter the quantity of items before been able to add the order to a cart using session storage to store the order details. When the order was added to cart the user had to be then taken to a second webpage to display all the orders in a table format showing the item, quantity and price for each. The total price for all order was then displayed at the bottom</p>
+      </div>
+    </div>
+    </div>
+
+    <div class="col-sm-4">
+    <div class="thumbnail">
+      <a href="shop/shop_intro.html"><h4>Sports shop website</h4></a>
+      <div class="caption">
+        <p><b>For this assigment the goal was to create a website that had the following;</b></p>
         <ul>
           <li>Serveral pages that can be easily accessed through a navigation bar on the left.</li>
           <li>Contain a table, unordered list and a orderd list.</li>
@@ -31,15 +40,6 @@ include ('includes/header.html');
     <div class="col-sm-4">
     <div class="thumbnail">
       <a href="#"><h4>Fine foods recipe website</h4></a>
-      <div class="caption">
-      	<p>A website had to be created where a user could order goods. The user needed to enter the quantity of items before been able to add the order to a cart using session storage to store the order details. When the order was added to cart the user had to be then taken to a second webpage to display all the orders in a table format showing the item, quantity and price for each. The total price for all order was then displayed at the bottom</p>
-      </div>
-    </div>
-    </div>
-
-    <div class="col-sm-4">
-    <div class="thumbnail">
-      <a href="#"><h4>Lab exercises</h4></a>
       <div class="caption">
       	<p>A website had to be created where a user could order goods. The user needed to enter the quantity of items before been able to add the order to a cart using session storage to store the order details. When the order was added to cart the user had to be then taken to a second webpage to display all the orders in a table format showing the item, quantity and price for each. The total price for all order was then displayed at the bottom</p>
       </div>
