@@ -6,7 +6,7 @@ include ('../includes/header.html');
 <div class="jumbotron">
   <div class="container text-center">
     <h1>Lab excercises for semester one</h1>
-    <p>Choose from the list below.</p>
+    <h4>Choose from the list below.</h4>
   </div>
 </div>
 
@@ -17,9 +17,10 @@ include ('../includes/header.html');
     <div class="thumbnail">
       <h4>DOM</h4>
       <div class="caption">
-      	<button onclick="funcDom1('dom1')">Lab1</button>
-      	<button onclick="funcDom2">Lab2</button>
-      	<button onclick="funcDom3">Lab3</button>
+      	<button onclick="funcDom('dom1')">Lab1</button><a href="/Git-Repository-Proj/labSem1/First_DOM_Lab.pdf"> Lab1.pdf</a><br><br>
+      	<button onclick="funcDom('dom2_1')">Lab2.1</button><a href="/Git-Repository-Proj/labSem1/Second_DOM_Lab.pdf"> Lab2.pdf</a><br><br>
+      	<button onclick="funcDom('dom2_2')">Lab2.2</button><br><br>
+      	<button onclick="funcDom('dom2_3')">Lab2.3</button>
       </div>
     </div>
     </div>
