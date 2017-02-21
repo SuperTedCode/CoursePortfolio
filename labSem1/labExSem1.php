@@ -17,10 +17,12 @@ include ('../includes/header.html');
     <div class="thumbnail">
       <h4>DOM</h4>
       <div class="caption">
-      	<button onclick="funcDom('dom1')">Lab1</button><a href="/Git-Repository-Proj/labSem1/First_DOM_Lab.pdf"> Lab1.pdf</a><br><br>
-      	<button onclick="funcDom('dom2_1')">Lab2.1</button><a href="/Git-Repository-Proj/labSem1/Second_DOM_Lab.pdf"> Lab2.pdf</a><br><br>
-      	<button onclick="funcDom('dom2_2')">Lab2.2</button><br><br>
-      	<button onclick="funcDom('dom2_3')">Lab2.3</button>
+        <ul>
+          <li onclick="funcDom('dom1')">Lab1 <a href="/Git-Repository-Proj/labSem1/First_DOM_Lab.pdf"> Lab1.pdf</a></li>
+          <li onclick="funcDom('dom2_1')">Lab2.1 <a href="/Git-Repository-Proj/labSem1/Second_DOM_Lab.pdf"> Lab2.pdf</a></li>
+          <li onclick="funcDom('dom2_2')">Lab2.2 </li>
+          <li onclick="funcDom('dom2_3')">Lab2.3 </li>
+        </ul>
       </div>
     </div>
     </div>
@@ -30,7 +32,7 @@ include ('../includes/header.html');
       <h4>JavaScript</h4>
       <div class="caption">
       	<ul>
-      		<li>Lab1</li>
+      		<li><a href="/Git-Repository-Proj/labSem1/labsHTML/JSLab1.html"> Lab1</a> <a href="/Git-Repository-Proj/labSem1/First_Javascript_Lab.pdf"> Lab1.pdf</a></li>
       		<li>lab2</li>
       		<li>lab3</li>
       	</ul>
@@ -69,6 +71,7 @@ include ('../includes/header.html');
 
 <div id="labSem1Content"  class="container-fluid">
 </div>
+
 
 <?php
 $page_title = 'Lab Excercises for Semester One';
