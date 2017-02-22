@@ -33,8 +33,9 @@ include ('../includes/header.html');
       <div class="caption">
       	<ul>
       		<li><a href="/Git-Repository-Proj/labSem1/labsHTML/JSLab1.html"> Lab1</a> <a href="/Git-Repository-Proj/labSem1/First_Javascript_Lab.pdf"> Lab1.pdf</a></li>
-      		<li>lab2</li>
-      		<li>lab3</li>
+      		<li onclick="funcDom('JSLab2')">Lab2 (forms) <a href="/Git-Repository-Proj/labSem1/Second_Javascript_Lab.pdf"> Lab2.pdf</a></li>
+      		<li onclick="funcDom('JSLab3')">Lab3 (calc) <a href="/Git-Repository-Proj/labSem1/Third_Javascript_Lab.pdf"> Lab3.pdf</a></li>
+          <li onclick="funcDom('JSLab4')">Lab4 (Guess Num Game) <a href="/Git-Repository-Proj/labSem1/Forth_Javascript_Lab.pdf"> Lab4.pdf</a></li>
       	</ul>
       </div>
     </div>

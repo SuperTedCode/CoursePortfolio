@@ -87,6 +87,134 @@ child.replaceChild(textnode, child.firstChild );
 	}
 
  };
+//*********************************************************************************************************8
+// function for JSLab 2 (Forms) ***************************************************
+function check()
+	{
+		//Variable with users inputs for first/last name:
+		var a=document.form1.fname.value + " " + document.form1.lname.value;
+		var name=("User is: "+ a +". ");
+		//Variable with users gender
+		var b=0;
+		var gender=("Gender of the user is: ");
+		if(document.getElementById("m").checked)
+			{gender+=("Male. "); b++;}
+		else if(document.getElementById("f").checked)
+			{gender+=("Female. "); b++;}
+		//Variable with users vehicles:
+		var transport=("User has the following vehicles: ");
+		var check=document.getElementsByName("checkbox1");
+		var checked=false;
+		for(var i=0; i<check.length; i++)
+			{
+				if(check[i].checked)
+				{
+					if(checked)
+					{transport+=" and "}
+					transport+=check[i].value;
+					checked=true;
+				}
+			}
+		transport+=". "
+		//Variable with username:
+		if(document.form1.user.value)
+		{var username=("Username is: "+ document.form1.user.value+". ");}
+		//Validate the PW before runing the function:
+		var password="pie"
+		if(password==document.form1.pw.value)
+		{
+		//To create a P Element and append it to the end of the HTML with all variables as text, but if created already it adds to existing P:
+		if(!document.getElementById("new_para"))
+		{
+		var p = document.createElement('p');
+		p.id = "new_para";
+		var t = document.createTextNode("");
+		p.appendChild(t);
+		document.body.appendChild(p);
+		}
+		else 
+			{
+				var p=document.getElementById("new_para");
+				p.innerHTML="";
+			}
+		//Checks for input before adding to text node.
+		if(a.length>1)
+		{p.innerHTML += name;}
 
+		if(b>0)
+		{p.innerHTML += gender;}
 
+		if (checked)
+		{p.innerHTML += transport;}
 
+		if(document.form1.user.value)
+		{p.innerHTML += username;}
+
+		//Have a empty P element in the HTML with id=new_para
+		//document.getElementById("new_para").innerHTML= document.form1.fname.value + " " + document.form1.lname.value;
+		}
+		else{alert("Invalid Password!");}
+	};
+//******************************************************************************
+// function for JavaScript lab 3 (Calc) *************************************************************
+var count=1;
+	function check()
+	{
+		//Variable with users inputs for 1st & 2nd Numbers:
+		var one=document.cal.num1.value;
+		var two=document.cal.num2.value;
+		var sum=document.getElementById("sum")
+		if(count<8)
+		{
+		switch (count)
+		{
+		case 1: //addition
+			var add=(parseInt(one)+parseInt(two));
+			sum.innerHTML ="Sum =>"+add+"\n</br>";
+			count++
+			break;
+		case 2: //subtraction
+			var sub=(parseInt(one)-parseInt(two));
+			sum.innerHTML += "Sub =>"+sub+"\n</br>";
+			count++
+			break;
+		case 3: //multiplication
+			var mul=(parseInt(one)*parseInt(two));
+			sum.innerHTML += "Mul =>"+mul+"\n</br>";
+			count++
+			break;
+		case 4: //division
+			var div=(parseInt(one)/parseInt(two));
+			sum.innerHTML += "Div =>"+div+"\n</br>";
+			count++
+			break;
+		case 5: //modulus
+			var mod=(parseInt(one)%parseInt(two));
+			sum.innerHTML += "Mod =>"+mod+"\n</br>";
+			count++
+			break;
+		case 6: //increment
+			var inc1=++one;
+			var inc2=++two;
+			sum.innerHTML += "Increment of each is =>"+ inc1 +" & " + inc2 + "\n</br>";
+			count++
+			break;
+		case 7: //decrement
+			var dec1=--one;
+			var dec2=--two;
+			sum.innerHTML += "Decrement of each is =>"+ dec1 +" & " + dec2 + "\n</br>";
+			count++
+			break;
+		default:
+			break;
+		}
+		}
+		else 
+			{
+			var end=document.getElementById("end")
+			end.innerHTML = "No more calculations available Thank you!!";
+			}
+		
+	};
+//**************************************************************************************************
+// function

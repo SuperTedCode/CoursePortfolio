@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Java Lab 6 with Kevin</title>
+</head>
+<script>
+/*
+var myFunction = function() {
+var count=1;
+};
+window.onload=myFunction;
+*/
+
+	function check()
+	{
+		var ans = document.getElementById("ans");
+		var rnum = Math.ceil(Math.random() * 100);
+		var unum = parseInt(prompt("Pick a num between 1 & 10"));
+		var img = document.getElementById('img');
+		var count = 0;
+		
+		while(unum!=rnum & count<6)
+		{
+			if(isNaN(unum))
+				{
+					alert("You did not enter a valid num! Try again");
+					unum = parseInt(prompt("Pick a num between 1 & 10"));
+				}
+			else
+				{
+					alert("Sorry, wrong number. Try again");
+					count++;
+					console.log(unum+'  '+rnum+'  '+count);
+					unum = parseInt(prompt("Pick a num between 1 & 10"));
+				}
+		}
+		if(unum==rnum)
+			{
+				img.src = "happy.gif";
+				img.width = "100";
+				img.height = "100";
+				ans.innerHTML="Good Guess";
+			}
+			else {
+				alert("Your six goes are up!! The num was "+rnum);
+			}
+	};
+
+</script>
+<body >
+
+	<h1>Welcome to my guessing game</h1>
+	<h3>Here you can try to guess the randon number</h3>
+	<form name="cal" > 
+	<br />
+	<br />
+	<input value="Lets play!!" type="button" onclick="check()" />
+	<p id="ans"></p>
+	</form>
+	<img id="img"></img>
+</body>
+</html>
+
