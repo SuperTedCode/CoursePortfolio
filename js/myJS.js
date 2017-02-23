@@ -158,7 +158,7 @@ function check()
 //******************************************************************************
 // function for JavaScript lab 3 (Calc) *************************************************************
 var count=1;
-	function check()
+	function calc()
 	{
 		//Variable with users inputs for 1st & 2nd Numbers:
 		var one=document.cal.num1.value;
@@ -217,4 +217,46 @@ var count=1;
 		
 	};
 //**************************************************************************************************
-// function
+// function for JavaLab4 Guessing game *****************************************************************
+function guess()
+	{
+		var ans = document.getElementById("ans");
+		var rnum = Math.ceil(Math.random() * 100);
+		var unum = parseInt(prompt("Pick a num between 1 & 10"));
+		var img = document.getElementById('img');
+		var count = 0;
+		
+		while(unum!=rnum & count<6)
+		{
+			if(isNaN(unum))
+				{
+					count++;
+					console.log(rnum);
+					unum = parseInt(prompt("You did not enter a valid number. Try again! - Pick a num between 1 & 100 - You have "+(6-count)+" lives left!!"));
+				}
+			else
+				{
+					count++;
+					console.log(rnum);
+					if (unum<rnum)
+					{
+						unum = parseInt(prompt("Too low :) Try again! - Pick a num between 1 & 100 - You have "+(6-count)+" lives left!!"));
+					}
+					else 
+					{
+						unum = parseInt(prompt("Too big ;) Try again! - Pick a num between 1 & 100 - You have "+(6-count)+" lives left!!"));
+					}
+				}
+		}
+		if(unum==rnum)
+			{
+				img.src = "/Git-Repository-Proj/labSem1/img/happy.gif";
+				img.width = "100";
+				console.log(img);
+				img.height = "100";
+				ans.innerHTML="Good Guess!! The number was "+rnum;
+			}
+			else {
+				ans.innerHTML="Your six goes are up!! The num was "+rnum;
+			}
+	};
