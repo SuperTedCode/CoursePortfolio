@@ -15,7 +15,7 @@ include ('includes/header.html');
 <div class="row">
     <div class="col-sm-4">
     <div class="thumbnail">
-      <a href="labSem1/labExSem1.php"><h4>Lab exercises</h4></a>
+      <a href="labSem1/labExSem1.php"><h4 class="title">Lab exercises</h4></a>
       <div class="caption">
       	<p>Before we started working on assigments and projects we had some lab excercises to first introduce the class to web programming. This included labs in <b><em>HTML, CSS, DOM, JavaScript, jQuery and Bootstrap.</em></b> Some of these labs I have included here. Each lab has a pdf outlining the excercise. Feel free to view each file in a source code editor like "Notepap++" to view the code created to complete each lab.</p>
       </div>
@@ -24,7 +24,7 @@ include ('includes/header.html');
 
     <div class="col-sm-4">
     <div class="thumbnail">
-      <a href="shop/shop_intro.html"><h4>Sports shop website</h4></a>
+      <a href="shop/shop_intro.html"><h4 class="title">Sports shop website</h4></a>
       <div class="caption">
         <p><b>For this assigment the goal was to create a website that had the following;</b></p>
         <ul>
@@ -39,7 +39,7 @@ include ('includes/header.html');
 
     <div class="col-sm-4">
     <div class="thumbnail">
-      <a href="#"><h4>Fine foods recipe website</h4></a>
+      <a href="#"><h4 class="title">Fine foods recipe website</h4></a>
       <div class="caption">
       	<p>A website had to be created where a user could order goods. The user needed to enter the quantity of items before been able to add the order to a cart using session storage to store the order details. When the order was added to cart the user had to be then taken to a second webpage to display all the orders in a table format showing the item, quantity and price for each. The total price for all order was then displayed at the bottom</p>
       </div>

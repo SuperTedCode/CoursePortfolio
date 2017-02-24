@@ -15,13 +15,13 @@ include ('../includes/header.html');
     
     <div class="col-sm-3">
     <div class="thumbnail">
-      <h4>DOM</h4>
+      <h4 class="title">DOM</h4>
       <div class="caption">
         <ul>
-          <li onclick="funcDom('dom1')">Lab1 <a href="/Git-Repository-Proj/labSem1/First_DOM_Lab.pdf" target="_blank"> Lab1.pdf</a></li>
-          <li onclick="funcDom('dom2_1')">Lab2.1 <a href="/Git-Repository-Proj/labSem1/Second_DOM_Lab.pdf" target="_blank"> Lab2.pdf</a></li>
-          <li onclick="funcDom('dom2_2')">Lab2.2 </li>
-          <li onclick="funcDom('dom2_3')">Lab2.3 </li>
+          <li onclick="funcDom('dom1')">Lab1</li><a class="pdf" href="/Git-Repository-Proj/labSem1/First_DOM_Lab.pdf" target="_blank"> Lab1.pdf</a>
+          <li onclick="funcDom('dom2_1')">Lab2.1</li><a class="pdf" href="/Git-Repository-Proj/labSem1/Second_DOM_Lab.pdf" target="_blank"> Lab2.pdf</a>
+          <li onclick="funcDom('dom2_2')">Lab2.2</li>
+          <li onclick="funcDom('dom2_3')">Lab2.3</li>
         </ul>
       </div>
     </div>
@@ -29,13 +29,13 @@ include ('../includes/header.html');
 
     <div class="col-sm-3">
     <div class="thumbnail">
-      <h4>JavaScript</h4>
+      <h4 class="title">JavaScript</h4>
       <div class="caption">
       	<ul>
-      		<li><a href="/Git-Repository-Proj/labSem1/labsHTML/JSLab1.html"> Lab1</a> <a href="/Git-Repository-Proj/labSem1/First_Javascript_Lab.pdf" target="_blank"> Lab1.pdf</a></li>
-      		<li onclick="funcDom('JSLab2')">Lab2 (forms) <a href="/Git-Repository-Proj/labSem1/Second_Javascript_Lab.pdf" target="_blank"> Lab2.pdf</a></li>
-      		<li onclick="funcDom('JSLab3')">Lab3 (calc) <a href="/Git-Repository-Proj/labSem1/Third_Javascript_Lab.pdf" target="_blank"> Lab3.pdf</a></li>
-          <li onclick="funcDom('JSLab4')">Lab4 (Guess Num Game) <a href="/Git-Repository-Proj/labSem1/Forth_Javascript_Lab.pdf" target="_blank"> Lab4.pdf</a></li>
+      		<li><a href="/Git-Repository-Proj/labSem1/labsHTML/JSLab1.html">Lab1</a></li><a class="pdf" href="/Git-Repository-Proj/labSem1/First_Javascript_Lab.pdf" target="_blank"> Lab1.pdf</a>
+      		<li onclick="funcDom('JSLab2')">Lab2 (forms)</li><a class="pdf" href="/Git-Repository-Proj/labSem1/Second_Javascript_Lab.pdf" target="_blank"> Lab2.pdf</a>
+      		<li onclick="funcDom('JSLab3')">Lab3 (calc)</li><a class="pdf" href="/Git-Repository-Proj/labSem1/Third_Javascript_Lab.pdf" target="_blank"> Lab3.pdf</a>
+          <li onclick="funcDom('JSLab4')">Lab4 (Guess Num Game)</li><a class="pdf" href="/Git-Repository-Proj/labSem1/Forth_Javascript_Lab.pdf" target="_blank"> Lab4.pdf</a>
       	</ul>
       </div>
     </div>
@@ -43,12 +43,10 @@ include ('../includes/header.html');
 
     <div class="col-sm-3">
     <div class="thumbnail">
-      <h4>jQuery</h4>
+      <h4 class="title">jQuery</h4>
       <div class="caption">
       	<ul>
-      		<li><a href="/Git-Repository-Proj/labSem1/labsHTML/JQLab1.html"> Lab1</a> <a href="/Git-Repository-Proj/labSem1/First_jQuery_Lab.pdf" target="_blank"> Lab1.pdf</a></li>
-      		<li>lab2</li>
-      		<li>lab3</li>
+      		<li><a href="/Git-Repository-Proj/labSem1/labsHTML/JQLab1to3.html">Lab1 & 2</a></li><a class="pdf" href="/Git-Repository-Proj/labSem1/First_jQuery_Lab.pdf" target="_blank"> Lab1.pdf</a><a class="pdf" href="/Git-Repository-Proj/labSem1/Second_jQuery_Lab.pdf" target="_blank"> Lab2.pdf</a>
       	</ul>
       </div>
     </div>
@@ -56,7 +54,7 @@ include ('../includes/header.html');
 
     <div class="col-sm-3">
     <div class="thumbnail">
-      <h4>Bootstrap</h4>
+      <h4 class="title">Bootstrap</h4>
       <div class="caption">
       	<ul>
       		<li>Lab1</li>

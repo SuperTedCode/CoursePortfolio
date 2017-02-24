@@ -11,10 +11,21 @@ footer {
 	margin-top: 60px;
  }
 
-/* Add spacing and color to the module names */
-a h4 {
+/* Add spacing and color to the module names and skills list in labs */
+.title {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	background-color: #a4c2f4;
 	text-align: center;
+}
+
+/* class added to pdf links */
+.pdf {
+	color: orange;
+}
+
+/* class for cursor animation on hover over lab links */
+li[onclick]:hover {
+	cursor: pointer;
+	text-decoration: underline;
 }
