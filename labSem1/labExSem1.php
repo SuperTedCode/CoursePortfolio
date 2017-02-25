@@ -5,8 +5,8 @@ include ('../includes/header.html');
 
 <div class="jumbotron">
   <div class="container text-center">
-    <h1>Lab excercises for semester one</h1>
-    <h4>Choose from the list below.</h4>
+    <h2>Introduction to Web Programming</h2>
+    <h3>Lab excercises for semester one: Choose from the list below.</h3>
   </div>
 </div>
 

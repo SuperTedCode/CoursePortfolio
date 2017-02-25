@@ -39,9 +39,11 @@ include ('includes/header.html');
 
     <div class="col-sm-4">
     <div class="thumbnail">
-      <a href="#"><h4 class="title">Fine foods recipe website</h4></a>
+      <a href="recipeWebsite/index.html"><h4 class="title">Fine foods recipe website</h4></a>
       <div class="caption">
-      	<p>A website had to be created where a user could order goods. The user needed to enter the quantity of items before been able to add the order to a cart using session storage to store the order details. When the order was added to cart the user had to be then taken to a second webpage to display all the orders in a table format showing the item, quantity and price for each. The total price for all order was then displayed at the bottom</p>
+      	<p><b><a class="pdf" href="recipeWebsite/RecipeProject.pdf" target="_blank">Website Assignment April 2016 pdf</a></b><br>
+        I have created a recipes website with five internal pages. The user can view three recipes from each page Lunch, Dinner and Dessert. Also included are some relitive external links to Bord Bia and The food Safty Athority Ireland in the nav bar. At the bottom of the home page is a table of short video links on top tips for cooking. The shopping list page contains a user input option to add food items to a list. Any item once added can then be removed if needed. No localstorage was required for the project so the list and cart count will not be saved if the user changes page or hits refresh. As the home page is long I have included a nav content table to jump to three sections on the page. The recipes section on the home page contains links in the three images to the three difdferent pages.<br>
+        <em>This website was tested on Chrome. Also as external style sheets are in use, connection to the internet is needed when tested the site.<em></p>
       </div>
     </div>
     </div>
