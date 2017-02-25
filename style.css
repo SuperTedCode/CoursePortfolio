@@ -29,3 +29,8 @@ li[onclick]:hover {
 	cursor: pointer;
 	text-decoration: underline;
 }
+
+/* background color for labs div on LabExSem1.php  */
+#labSem1Content {
+	background-color: #c5dff9;
+}

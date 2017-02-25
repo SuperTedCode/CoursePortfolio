@@ -1,0 +1,45 @@
+.darkBG {
+    background: #999;
+	position:relative;min-height:1px;padding-right:15px;padding-left:15px;
+	float:left;
+    }
+    
+.darkerBG {
+    background: #777;
+	position:relative;min-height:1px;padding-right:15px;padding-left:15px;
+	float:left;
+    }
+
+.darkestBG {
+    background: #555;
+	position:relative;min-height:1px;padding-right:15px;padding-left:15px;
+	float:left;
+    }
+
+#img {
+    background: #555;
+	position:relative;min-height:1px;padding-right:15px;padding-left:15px;
+	float:left;
+    }
+	
+#test1 {
+	width:50%;
+}
+#test2 {
+	width:50%;
+}
+#test3 {
+	width:50%;
+}
+#test4 {
+	width:25%;
+}
+#test5 {
+	width:75%;
+}
+#test6 {
+	width:100%;
+}
+
+    
+    
