@@ -15,7 +15,7 @@ include ('includes/header.html');
 <div class="row">
     <div class="col-sm-4">
     <div class="thumbnail">
-      <a href="#"><h4 class="title">Lab exercises</h4></a>
+      <a href="labSem1/CrossMobAppDevlabExSem1.php"><h4 class="title">Lab exercises</h4></a>
       <div class="caption">
       	<p></p>
       </div>
