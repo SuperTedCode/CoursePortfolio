@@ -51,10 +51,12 @@ include ('../includes/header.html');
 
     <div class="col-sm-3">
     <div class="thumbnail">
-      <h4 class="title">???</h4>
+      <h4 class="title">jsbin.com labs</h4>
       <div class="caption">
       	<ul>
-      		<li><a href="/Git-Repository-Proj/labSem1/labsHTML/BootLab1.html">Lab1 (Layouts) </a></li><a class="pdf" href="/Git-Repository-Proj/labSem1/First_Bootstrap_Lab.pdf" target="_blank"> Lab1.pdf</a>
+      		<li><a href="/Git-Repository-Proj/labSem1/AppDevJSBINLab1.txt" target="_blank">Lab1 </a></li>
+          <li><a href="/Git-Repository-Proj/labSem1/AppDevJSBINLab2.txt" target="_blank">Lab2 </a></li>
+          <li><a href="/Git-Repository-Proj/labSem1/AppDevJSBINLab3.txt" target="_blank">Lab3 </a></li>
       	</ul>
       </div>
     </div>

@@ -1,0 +1,101 @@
+/*Write a JavaScript program to calculate a user’s BMI (Body Mass Index).
+The formula for BMI is:
+
+Weight (kgs) / Height (meters)2
+
+So if your weight was 55kg and your height was 1.6meters your BMI would be 21.48
+Assume the user will enter his or her weight in KGs, and his or her height in Meters.
+Assume that the user will always enter a valid weight and height.
+HINT: The confirm function in JavaScript takes a String as a parameter.
+To combine many variables into strings use the + operator.*/
+var kgStr = prompt("Enter your weight in KGs");
+var kgs = parseFloat(kgStr);
+
+var metersStr = prompt("Enter your height in metres");
+var meters = parseFloat(metersStr);
+
+meters = meters * meters;
+confirm("BMI = " + kgs/meters);
+
+/*Update the above JavaScript program to handle cases when the user enters
+invalid data for his or her weight or height.
+In such cases the program shouldn’t attempt to calculate the user’s BMI.*/
+var kgStr = prompt("Enter your weight in KGs");
+var kgs = parseFloat(kgStr);
+
+if (isNaN(kgs)) {
+  confirm("You didn't enter a valid weight");
+} else {
+  var metersStr = prompt("Enter your height in metres");
+  var meters = parseFloat(metersStr);
+
+  if (isNaN(meters)) {
+    confirm("You didn't enter a valid height");
+  } else {
+  meters = meters * meters;
+  confirm("BMI = " + kgs/meters);
+  }
+}
+
+/*Write JavaScript code to allow the user to enter 2 numbers
+and display the smallest of the two numbers in the following format:
+
+If the user enters an invalid number the program should display a message box stating
+“You must enter a valid number”, it should not attempt any comparison in this case.
+HINT: Prompt always returns a String. To convert this to an integer use parseInt().
+Assume the user never presses Cancel – no need to handle this case.*/
+var numStr = prompt("Enter first Number");
+var num1 = parseInt(numStr);
+
+if (isNaN(num1)) {
+  confirm("You must enter a valid number");
+} else {
+  numStr = prompt("Enter second Number");
+  var num2 = parseInt(numStr);
+
+  if (isNaN(num2)) {
+      confirm("You must enter a valid number");
+  } else {
+    if (num1 < num2) {
+      confirm("First Number (" + num1 + ") is less than Second Number (" + num2 + ")");
+    } else if (num2 < num1) {
+      confirm("Second Number (" + num2 + ") is less than First Number (" + num1 + ")");
+    } else {
+    confirm("Both numbers (" + num1 + ") and (" + num2 + ") are equal");
+    }
+  }
+}
+
+/*The following line of code will produce a random number between 1 and 5 inclusive
+Use this code to write a JavaScript program to allow the user to take 1 guess at
+the random number (inform the user of the range).
+If he or she guesses correctly display the following:
+HINT: “\n” is the symbol for a new line.
+
+If he or she guesses incorrectly display the following:
+
+No need to handle the case where the user guesses outside the range.*/
+var randomNum = Math.floor((Math.random() * 5) + 1);
+var guessStr = prompt("Enter your guess between 1 and 5");
+var guess = parseInt(guessStr);
+if (guess === randomNum) {
+  confirm("You guessed right!\n" + randomNum + " was the random number");
+} else {
+  confirm("Sorry\n" + randomNum + " was the random number");
+}
+
+//Update the code so that the user can choose the upper limit of the random number range.
+var upperLimitStr = prompt("Enter the upper limit for the random number range");
+var upperLimit = parseInt(upperLimitStr);
+if (isNaN(upperLimit)) {
+  confirm("You must enter a valid number");
+} else {
+  var randomNum = Math.floor((Math.random() * upperLimit) + 1);
+  var guessStr = prompt("Enter your guess between 1 and " + upperLimit);
+  var guess = parseInt(guessStr);
+  if (guess === randomNum) {
+    confirm("You guessed right!\n" + randomNum + " was the random number");
+  } else {
+    confirm("Sorry\n" + randomNum + " was the random number");
+  }
+}

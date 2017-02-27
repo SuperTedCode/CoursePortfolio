@@ -1,0 +1,359 @@
+//noprotect
+// ^^ above comment added to allow infinite loops on jsbin
+//Write a JavaScript program that prints out every 3rd letter of the alphabet.
+var alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+
+for (var i=3; i<alphabet.length; i+=3) {
+  console.log(alphabet[i]);
+}
+
+/*Write a JavaScript program that prints out in a string in reverse.
+E.g. the string was “Hello World” the output would be “dlroW olleH”.*/
+var forward = "Hello World";
+var backward = "";
+for (var i=forward.length-1; i>=0; i--) {
+  backward+=forward[i];
+}
+
+console.log(backward);
+
+/*Write a JavaScript program that asks the user to enter a number until he or she enters -1.
+When -1 is entered all numbers previously entered by the user (but not -1)
+should be added together and the result displayed to the user.
+Assume the user will always enter a valid positive integer for addition.*/
+var total = 0;
+do {
+  var num = parseInt(prompt("Enter a number: '-1 to exit'"));
+  if (num != -1) {
+    total += num;
+  }
+} while (num != -1);
+
+console.log(total);
+
+/*Write a JavaScript program that has a function called max()
+that takes two numbers as arguments and returns the largest of them.
+The numbers can be hard-coded in the program.*/
+var max = function(num1, num2) {
+  if (num1 > num2) {
+    return num1;
+  } else {
+    return num2;
+  }
+};
+
+console.log(max(1,23));
+
+/*Update the program in the previous question so that the numbers are entered by the user.
+The numbers should be within the range 1 to 100.
+If the numbers are outside this range (or invalid numbers – NaN) the user should be
+given the opportunity to re-enter them until he or she enters two valid numbers.
+If the user presses Cancel at any time the program should end without performing the max() function.*/
+
+//This function returns false if input
+//is not a number NaN, or if input is
+//outside of the specified range
+var checkInput = function(input) {
+  var num = parseInt(input);
+  if (isNaN(num)) {
+    return false;
+  }
+  if (num < 1 || num > 100) {
+    return false;
+  }
+  return num;
+};
+
+//This function gets a number from the user.
+//If the user presses Cancel it returns false,
+//otherwise it returns a valid number
+var getInput = function(numberToEnter) {
+  var gotNumber = false;
+  var numStr = prompt("Enter " + numberToEnter + " Number (Range 1-100):");
+  if (numStr === null) {
+    return false;
+  }
+  var num = checkInput(numStr);
+  if (num !== false) {
+    return num;
+  }
+  do {
+    numStr = prompt("Invalid/Out of Range (1-100) Number: " + numStr + "\nPlease Enter " + numberToEnter + " Number Again:");
+    if (numStr === null) {
+      return false;
+    }
+    num = checkInput(numStr);
+  } while (num === false);
+  return num;
+};
+
+//This program gets the maximum of two
+//user-entered numbers
+var num1 = getInput("1st");
+if (num1 !== false) {
+  var num2 = getInput("2nd");
+  if (num2 !== false) {
+    confirm("Max of " + num1 + " and " + num2 + " is: " + max(num1,num2));
+  }
+}
+
+/*Write a JavaScript program that generates a random number
+between 1 and a user-specified number. Make sure the user enters a valid number for this.
+Give the user 5 guesses (informing him each time of the number of guesses left) to guess the random number.
+If the user gets the answer right tell him or her how many guesses it took him or her.
+If the user presses cancel at any time the program should exit.
+Assume the user always enters a valid guess (i.e. always an integer, never NaN).*/
+//This function returns a valid number
+//or null if cancel was pressed
+var getUpperLimit = function() {
+  var upperLimitStr, upperLimit;
+  do {
+    upperLimitStr = prompt("Enter upper limit for random number");
+    upperLimit = parseInt(upperLimitStr);
+  } while (upperLimitStr !== null && isNaN(upperLimit));
+  if (upperLimitStr === null) {
+    return null;
+  }
+  return upperLimit;
+};
+
+//Get the upper limit and generate the
+//random number based on it.
+var upperLimit = getUpperLimit();
+if (upperLimit !== null) {
+  var correctGuess = false;
+  var cancel = false;
+  var randomNum = Math.floor((Math.random() * upperLimit) + 1);
+
+  //Keep showing the prompt box when:
+  // 1. It’s not a correct guess
+  // 2. The number of guesses is less than 5
+  // 3. The user didn’t press cancel
+  for (var guessNum=0; !correctGuess && guessNum<5 && !cancel; guessNum++) {
+    var guessStr = prompt("Guess number between 1 and " + upperLimit + " " + (5-guessNum) + " guesses left");
+    if (guessStr === null) {
+      cancel = true;
+    } else {
+      var guess = parseInt(guessStr);
+      if (guess === randomNum) {
+        correctGuess = true;
+      }
+    }
+  }
+
+  //If the user didn’t press cancel check
+  //his or her guess
+  if (!cancel) {
+    if (correctGuess) {
+      confirm("Correct!\n" + randomNum + " was the random number\nYou guessed it in " + guessNum + " guesses");
+    } else {
+      confirm("Sorry! " + randomNum + " was the random number");
+    }
+  }
+}
+
+/*Write a JavaScript program that allows a user to enter a month from 1-12.
+ If he or she enters a valid month, the name of the month corresponding to the number
+ along with the number of days in the month should be displayed.*/
+ var monthNumStr = prompt("Enter month number 'Press cancel to exit'");
+while (monthNumStr !== null) {
+  if (monthNumStr !== null) {
+    var monthNum = parseInt(monthNumStr);
+    if (!isNaN(monthNum)) {
+      switch (monthNum) {
+        case 1:
+          alert("January: 31");
+          break;
+        case 2:
+          alert("February: 29");
+          break;
+        case 3:
+          alert("March: 31");
+          break;
+        case 4:
+          alert("April: 30");
+          break;
+        case 5:
+          alert("May: 31");
+          break;
+        case 6:
+          alert("June: 30");
+          break;
+        case 7:
+          alert("July: 31");
+          break;
+        case 8:
+          alert("August: 31");
+          break;
+        case 9:
+          alert("September: 30");
+          break;
+        case 10:
+          alert("October: 31");
+          break;
+        case 11:
+          alert("November: 30");
+          break;
+        case 12:
+          alert("December: 31");
+          break;
+      }
+    }
+  }
+  monthNumStr = prompt("Enter month number 'Press cancel to exit'");
+}
+
+/*A cipher, or code, is used to make a message secret. 
+The Caesar cipher is a type of substitution cipher in which each letter in the plaintext is 'shifted'
+a certain number of places down the alphabet. For example, with a shift of 1,
+ A would be replaced by B, B would become C, and so on. “Hello World” would become “ifmmp xpsme”.
+With a shift of 20, A would be replaced by U, B would become V, Z would become T, and so on.
+“Hello World would become "byffi qilfx".
+Write a JavaScript program that allows a user to enter the shift number (1-25) and the text to be encoded, and displays the encoded text.
+If the user enters the encoded text, the plaintext (unencoded text) should be displayed.*/
+
+var encodeOrDecodeValues = { "ENCODE" : 1,
+                             "DECODE" : 2};
+var alphabet = "abcdefghijklmnopqrstuvwxyz";
+var cipher = "";
+
+//-----------------------------------
+//This function prompts the user to enter a shift
+//between 1 & 25.
+//If the user presses cancel null is returned.
+//Otherwise, the function keeps asking the user for
+//input until a valid number between 1 & 25 is entered.
+//
+//When a valid shift has been entered, a new cipher
+//is created, with the letters shifted by the shift
+//amount.
+//-----------------------------------
+var getShift = function() {
+  var shiftStr = "";
+  var shift = 1;
+  do {
+     shiftStr= prompt("Enter the shift for the Caesar cipher");
+    if (shiftStr === null) {
+      return null;
+    }
+    shift = parseInt(shiftStr);
+  } while (isNaN(shift) || (shift <1 || shift > 26));
+  var alphabetCounter = shift;
+  for (var i=0; i<26; i++, alphabetCounter++) {
+    if (alphabetCounter >=26) {
+      alphabetCounter = 0;
+    }
+    cipher+=alphabet[alphabetCounter];
+  }
+};
+
+//-----------------------------------
+//This function asks the user to enter
+//1 to Encode text or
+//2 to Decode code
+//
+//If the user pressed cancel, null is returned.
+//Otherwise, the function keeps asking the user for
+//input until a valid number (either 1 or 2) is entered.
+//If the user enters a valid number, the enum representing
+//ENCODE or DECODE is returned
+//-----------------------------------
+var getEncodeOrDecode = function() {
+  var encodeOrDecodeStr = "";
+  var encodeOrDecode;
+  do {
+    encodeOrDecodeStr = prompt("Enter 1 to input text to be Encoded\nEnter 2 to input code to be Decoded");
+    if (encodeOrDecodeStr === null) {
+      return null;
+    }
+    encodeOrDecode = parseInt(encodeOrDecodeStr);
+  } while (isNaN(encodeOrDecode) || (encodeOrDecode <1 || encodeOrDecode > 2));
+  if (encodeOrDecode === encodeOrDecodeValues.ENCODE) {
+    return encodeOrDecodeValues.ENCODE;
+  }
+  return encodeOrDecodeValues.DECODE;
+};
+
+
+//-----------------------------------
+//This function takes a parameter called displayMsg
+//which is displayed to the user.
+//If the user pressed cancel, null is returned.
+//Otherwise, the text entered by the user is returned.
+//-----------------------------------
+var getText = function(displayMsg) {
+  var textStr = prompt("Enter " + displayMsg);
+  if (textStr === null) {
+    return null;
+  }
+  return textStr.toLowerCase();
+};
+
+
+//-----------------------------------
+//This function takes a parameter called textToEncode
+//which is the text to be changed into code
+//
+//It loops through the textToEncode and checks the index of
+//each character in the textToEncode in the alphabet.
+//If the textToEncode character is in the alphabet (a-z)
+//then it gets the character at the same index in the cipher
+//and adds it to encodedText.
+//E.g. alphabet = "abcdefghijklmnopqrstuvwxyz"
+//     shift = 1
+//     cipher = "bcdefghijklmnopqrstuvwxyza";
+//     textToEncode="any"
+//     The index of "a" in the alphabet is 0
+//     The character at 0 in the cipher is b
+//     Therefore encodedText="b"
+//
+//     The index of "n" in the alphabet is 13
+//     The character at 0 in the cipher is o
+//     Therefore encodedText="bo"
+//
+//-----------------------------------
+var encodeText = function(textToEncode) {
+  var encodedText = "";
+  var indexInAlphabet;
+  for (var i=0; i<textToEncode.length; i++) {
+    indexInAlphabet = alphabet.indexOf(textToEncode[i]);
+    if (indexInAlphabet === -1) {
+      encodedText += textToEncode[i];
+    } else {
+      encodedText += cipher.charAt(indexInAlphabet);
+    }
+  }
+  return encodedText;
+};
+
+var decodeText = function(textToDecode) {
+  var decodedText = "";
+  var indexInCode;
+  for (var i=0; i<textToDecode.length; i++) {
+    indexInCode = cipher.indexOf(textToDecode[i]);
+    if (indexInCode === -1) {
+      decodedText += textToDecode[i];
+    } else {
+      decodedText += alphabet.charAt(indexInCode);
+    }
+  }
+  return decodedText;
+};
+
+var shift = getShift();
+if (shift !== null) {
+  var encodeOrDecodeStr = getEncodeOrDecode();
+  if (encodeOrDecodeStr !== null) {
+    if (encodeOrDecodeStr === encodeOrDecodeValues.ENCODE) {
+      var textToEncode = getText("text to encode");
+      if (textToEncode !== null) {
+        console.log(encodeText(textToEncode));
+      }
+    } else {
+      var textToDecode = getText("code to decode");
+      if (textToDecode !== null) {
+        console.log(decodeText(textToDecode));
+      }
+    }
+  }
+}
