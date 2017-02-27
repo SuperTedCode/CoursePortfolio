@@ -51,12 +51,10 @@ include ('../includes/header.html');
 
     <div class="col-sm-3">
     <div class="thumbnail">
-      <h4 class="title">Bootstrap</h4>
+      <h4 class="title">???</h4>
       <div class="caption">
       	<ul>
       		<li><a href="/Git-Repository-Proj/labSem1/labsHTML/BootLab1.html">Lab1 (Layouts) </a></li><a class="pdf" href="/Git-Repository-Proj/labSem1/First_Bootstrap_Lab.pdf" target="_blank"> Lab1.pdf</a>
-      		<li><a href="/Git-Repository-Proj/labSem1/labsHTML/BootLab2.html">Lab2 (Buttons/panels/tables..etc) </a></li><a class="pdf" href="/Git-Repository-Proj/labSem1/Second_Bootstrap_Lab.pdf" target="_blank"> Lab2.pdf</a>
-      		<li><a href="/Git-Repository-Proj/labSem1/labsHTML/BootLab3.html">Lab3 </a></li><a class="pdf" href="/Git-Repository-Proj/labSem1/Third_Bootstrap_Lab.pdf" target="_blank"> Lab3.pdf</a>
       	</ul>
       </div>
     </div>
