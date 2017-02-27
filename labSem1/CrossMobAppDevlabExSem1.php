@@ -30,10 +30,9 @@ include ('../includes/header.html');
       <h4 class="title">JavaScript</h4>
       <div class="caption">
       	<ul>
-      		<li><a href="/Git-Repository-Proj/labSem1/labsHTML/JSLab1.html">Lab1</a></li><a class="pdf" href="/Git-Repository-Proj/labSem1/First_Javascript_Lab.pdf" target="_blank"> Lab1.pdf</a>
-      		<li onclick="funcDom('JSLab2')">Lab2 (forms)</li><a class="pdf" href="/Git-Repository-Proj/labSem1/Second_Javascript_Lab.pdf" target="_blank"> Lab2.pdf</a>
-      		<li onclick="funcDom('JSLab3')">Lab3 (calc)</li><a class="pdf" href="/Git-Repository-Proj/labSem1/Third_Javascript_Lab.pdf" target="_blank"> Lab3.pdf</a>
-          <li onclick="funcDom('JSLab4')">Lab4 (Guess Num Game)</li><a class="pdf" href="/Git-Repository-Proj/labSem1/Forth_Javascript_Lab.pdf" target="_blank"> Lab4.pdf</a>
+      		<li><a class="pdf" href="/Git-Repository-Proj/labSem1/AppDevJavaScriptLab1.pdf" target="_blank"> Lab1.pdf</a></li>
+      		<li><a class="pdf" href="/Git-Repository-Proj/labSem1/AppDevJavaScriptLab2.pdf" target="_blank"> Lab2.pdf</a></li>
+          <li><a class="pdf" href="/Git-Repository-Proj/labSem1/AppDevJavaScriptLab3.pdf" target="_blank"> Lab3.pdf</a></li>
       	</ul>
       </div>
     </div>
@@ -44,7 +43,7 @@ include ('../includes/header.html');
       <h4 class="title">jQuery</h4>
       <div class="caption">
       	<ul>
-      		<li><a href="/Git-Repository-Proj/labSem1/labsHTML/JQLab1to3.html">Lab1 & 2</a></li><a class="pdf" href="/Git-Repository-Proj/labSem1/First_jQuery_Lab.pdf" target="_blank"> Lab1.pdf</a><a class="pdf" href="/Git-Repository-Proj/labSem1/Second_jQuery_Lab.pdf" target="_blank"> Lab2.pdf</a>
+      		<li><a href="/Git-Repository-Proj/labSem1/labsHTML/AppDevJQLab1.html">Lab1 </a></li>
       	</ul>
       </div>
     </div>
