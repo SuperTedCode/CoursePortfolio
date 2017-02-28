@@ -53,6 +53,7 @@ include ('../includes/header.html');
     <div class="thumbnail">
       <h4 class="title">jsbin.com labs</h4>
       <div class="caption">
+      <p>Below are the txt files you can copy and paste into jsbin.com in the JavaScript window. Comments are included for your ref.</p>
       	<ul>
       		<li><a href="/Git-Repository-Proj/labSem1/AppDevJSBINLab1.txt" target="_blank">Lab1 </a></li>
           <li><a href="/Git-Repository-Proj/labSem1/AppDevJSBINLab2.txt" target="_blank">Lab2 </a></li>
