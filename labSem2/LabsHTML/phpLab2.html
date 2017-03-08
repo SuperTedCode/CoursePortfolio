@@ -1,0 +1,26 @@
+<h1>PHP Lab2 Ex2</h1>
+<br>
+<form action="./labsHTML/PHPLab2handle_form.php" method="get"> Enter Your information in the form below:<br><br>
+            Name: <input type="text" name="name"><br><br>
+            Email Address: <input type="text" name="email"><br><br>
+            Gender: <input type="radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="Female">Female<br><br>
+
+            Age: <select name="age">
+                    <option value="0-29">Under 30</option>
+                    <option value="30-60">Between 30 and 60</option>
+                    <option value="60+">Over 60</option>
+                 </select> <br><br>
+
+            Comments: <textarea name="comments" rows='5'></textarea><br><br>
+            Interests: <br>
+            <label>
+            <input type="checkbox" name="interests[]" value="css">CSS<br>
+            <input type="checkbox" name="interests[]" value="php">PHP<br>
+            <input type="checkbox" name="interests[]" value="javaScript">JavaScript<br>
+            <input type="checkbox" name="interests[]" value="html">HTML<br>
+            </label>
+
+            <br><p align="center"><input type="submit" name="button" value="Submit My Information"></p>
+
+</form>
