@@ -75,10 +75,23 @@ var child=document.getElementById("child")
 child.replaceChild(textnode, child.firstChild );
 }
 //*********************************************************************************************************8
-// function to popluate the target div with the selected DOM lab via the function call on the button*********
+// function to popluate the target div with the selected HTML lab via the function call on the button*********
  function funcDom(file) {
  	var xhr = new XMLHttpRequest();
 	xhr.open('GET','labsHTML/'+file+'.html',true);
+	xhr.send(null);
+
+	xhr.onload = function() {
+		var el = document.getElementById("labSem1Content");
+		el.innerHTML = xhr.responseText;
+	}
+
+ };
+ //*********************************************************************************************************8
+// function to popluate the target div with the selected PHP lab via the function call on the button*********
+ function funcPHP(file) {
+ 	var xhr = new XMLHttpRequest();
+	xhr.open('GET','labsHTML/'+file+'.php',true);
 	xhr.send(null);
 
 	xhr.onload = function() {
@@ -261,4 +274,54 @@ function guess()
 			}
 	};
 //**************************************************************************************************
+//Web Application Development - Sem 2 - Local and session storage. Note the function names have been altered slightly to seperate local and session functions.
+//********************************** local ******************************************
+function book (name) {
+	this.name = name;
+};
+
+function addLocal() {
+	var key = "key"+localStorage.length;
+	var x = new book(document.book_formLocal.bookName.value);
+	localStorage.setItem(key,JSON.stringify(x));
+	document.book_formLocal.bookName.value = "";
+};
+
+function clear_storageLocal() {
+	localStorage.clear();
+};
+
+function fromStorageLocal() {
+	for (i=0;i<localStorage.length;i++) {
+		var y = localStorage.getItem("key"+i);
+		alert(JSON.parse(y).name);
+	}
+	return false; // to stop the page refreshing when the form submits
+};
+
+
+//*********************** Session  **************************************************
+function book (name) {
+	this.name = name;
+};
+
+function addSession() {
+	var key = "key"+sessionStorage.length;
+	var x = new book(document.book_formSession.bookName.value);
+	sessionStorage.setItem(key,JSON.stringify(x));
+	document.book_formSession.bookName.value = "";
+};
+
+function clear_storageSession() {
+	sessionStorage.clear();
+};
+
+function fromStorageSession() {
+	for (i=0;i<sessionStorage.length;i++) {
+		var y = sessionStorage.getItem("key"+i);
+		alert(JSON.parse(y).name);
+	}
+	return false;
+};
+//********************************************************************************************
 //
