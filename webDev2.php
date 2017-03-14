@@ -26,10 +26,14 @@ include ('includes/header.html');
     <div class="thumbnail">
       <h4 class="title">Assessments</h4>
       <div class="caption">
-        <p>There are two links included below. For the first Assessment we had to create a webpage to store 'names objects' into local storage. Another page was to then list the names from storage in a table. Also when a row in the table is clicked, that row is to be removed from both the table and locat storage.<br>
-        The second was on AJAX,jQuery and JSONP. Note these are linked to the local host with a working webserver. <b>The links below will not work unless you have apache up and running in XAMP.</p>
+        <p>There are two links included below. For the first Assessment we had to create a webpage to store 'names objects' into local storage. Another page was to then list the names from storage in a table. Also when a row in the table is clicked, that row is to be removed from both the table and local storage.<hr>
+        The second assessment is on AJAX, jQuery and JSONP. JSON data of the Premier League table is retrieved using AJAX. The first link is done using JavaScript while the second link is done using jQuery. Please look over the js files for ref ".../WebDevAssessments/js/xxxTable.js"<br>The last link is for the Seasons list with animation. Here the json data is retrieved from a server on a different domain. This is my solution in jQuery to retrieve the data using JSONP. See pdf below for server address.</p>
         <ul>
-          <li></li>
+          <li><a href="/Git-Repository-Proj/WebDevAssessments/addNames.html">Ex2 Add, Display and remove names in loalstorage</a></li><a class="pdf" href="/Git-Repository-Proj/WebDevAssessments/javascript_assessmentNames.pdf" target="_blank">Names Assessment pdf</a>
+          <li><a href="/Git-Repository-Proj/WebDevAssessments/table-json-js.html">Football table using JS</a></li>
+          <li><a href="/Git-Repository-Proj/WebDevAssessments/table-json-jQuery.html">Football table using jQuery</a></li>
+          <li><a href="/Git-Repository-Proj/WebDevAssessments/seasons-json.html">Seasons table</a></li>
+          <a class="pdf" href="/Git-Repository-Proj/WebDevAssessments/PremierLeagueAssessment.pdf" target="_blank">Premier League and Seasons Assessment pdf</a>
         </ul>
       </div>
     </div>

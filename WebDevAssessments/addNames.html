@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+    <title>Add Names</title>
+    <!-- adding the header HTML to the webpage -->
+    <p style="font-family:Georgia, serif; padding:1em; padding-left:55px; background-color: #a4c2f4; text-align: center; border: solid 2px; color: white;"><a href="/Git-Repository-Proj/WebDev2.php" style="color: white;">Back to Lab excercises</a></p>
+    <!-- end of header HTML -->
+    <script src="/Git-Repository-Proj/WebDevAssessments/js/addNames.js" type="text/javascript" defer></script>
+ </head>
+
+<body>
+	<form name="name_form" action="nameList.html">
+		<table>
+			<tr><td>First Name:</td> <td><input type="text" width="50" name="fname" id="fld1"/></td></tr>
+			<tr><td>Surname:</td> <td><input type="text" width="50" name="lname" id="fld2"/></td></tr>
+		</table>
+		<br>
+		<button id="b1" onclick="add()" type="button">Add</button>
+		<button id="b2" onclick="clear_storage()" type="button">Clear Storage</button><br><br>
+		<input type="submit" value="Go To Name List">
+	</form>
+</body>
+</html>
