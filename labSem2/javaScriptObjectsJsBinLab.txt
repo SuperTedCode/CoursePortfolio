@@ -1,0 +1,145 @@
+// creates an object of type House;
+
+//using the Object Literal Notation method
+var House =
+{
+	numBedrooms: 4,
+	numWindows: 6,
+	isBungalow: true,
+	address: "Galway"
+};
+
+console.log(House.address);
+
+
+//new keyword method:
+var home = new Object();
+home.numBedrooms = 4;
+home.numWindows = 6;
+home.isBungalow = true;
+home.address = "Tuam";
+
+console.log(home.address);
+
+
+//Object Constructor method:
+function flat(beds,windows,isBungalow,addr) {
+  this.numBedrooms = beds;
+  this.numWindows = windows;
+  this.isBungalow = isBungalow;
+  this.address = addr;
+}
+
+var flatA = new flat(1,3,false,"Dublin");
+
+console.log(flatA.address);
+
+///////////////////////////////////////////////////////////////////////////////////
+
+function person(fname,lname,dob,sex,isMarried) {
+	this.firstName = fname;
+	this.lastName = lname;
+	this.DOB = new Date(dob);
+	this.sex = sex;
+	this.married = isMarried;
+    this.getAge = function(year) {
+     // year = promot("Enter a year")
+      if (year-this.DOB.getFullYear() >=0) {
+        return (this.firstName + " Will be " + (year - this.DOB.getFullYear()) + "yrs old in " + year);
+      }
+      else {
+        return (this.firstName + " Will not be born for another " + ((year - this.DOB.getFullYear())*-1) + "yrs from " + year);
+      } //if you dont know if a num is neg or not... Return the absolute value of a number: Math.abs(x);
+    };
+}
+var James = new person("James","Taylor","1985/05/05","M",false);
+var John = new person("John","Smith","05/06/07","M",false);
+var Mary = new person("Mary","Murphy","11/12/13","W",true);
+
+console.log(James.firstName);
+console.log(James.lastName);
+console.log(James.getAge(2084));
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+function student(fname,lname) {
+	this.firstName = fname;
+	this.lastName = lname;
+	this.classes = [];
+	this.addClass = function(newClass) {
+		this.classes.push(newClass);
+	};
+    this.rmClass = function(rmClass) {
+      var array = this.classes;
+      var name = (this.firstName+" "+this.lastName);
+      var found = false;
+      array.find(checkClassName);
+      function checkClassName(step,index) {
+        if (array[index] === rmClass) {
+          array.splice(index,1);
+          console.log(rmClass+" has been removed from "+name);
+          found = true;
+          return true;
+          
+        }
+     /*if (index>array.length && (found===false)){
+          console.log(rmClass+" Was not found in "+name);
+        return false;
+        }*/
+      };
+      if (found===false){
+          console.log(rmClass+" was not found in "+name);
+      
+        }
+    };
+    this.print = function(){
+    	console.log(this.classes.sort());
+    }
+}
+
+
+var James = new student("James","Taylor");
+
+James.addClass("web");
+James.addClass("cook");
+James.addClass("java");
+James.addClass("html");
+James.rmClass("web");
+James.print();
+
+///////////////////////////////////////////////////////////////////////////////
+
+//transform this into an array of objects
+
+var countyDetailsArray = 
+[["Galway", "Galway city", true],
+ ["Leitrim", "Carrick-on-Shannon", true],
+ ["Mayo", "Castlebar", true],
+ ["Roscommon", "Roscommon town", false],
+ ["Sligo", "Sligo town", true]];
+
+function countyDetail(county,town,iscoast) {
+  this.county = county;
+  this.town = town;
+  this.coast = iscoast;
+}
+
+var cnum = countyDetailsArray.length;
+var countyDetailsArrayObj = [];
+//var rnum = countyDetailsArray[0].length
+for (i=0;i<cnum;i++) {
+  var name = countyDetailsArray[i][0];
+  this[name] = new countyDetail(countyDetailsArray[i][0],countyDetailsArray[i][1],countyDetailsArray[i][2]);
+  countyDetailsArrayObj.push(this[name]);
+  }
+
+console.log(countyDetailsArray);
+console.log (countyDetailsArrayObj);
+
+
+
+
+
+
+
