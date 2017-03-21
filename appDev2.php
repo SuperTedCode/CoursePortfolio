@@ -29,10 +29,6 @@ include ('includes/header.html');
         <p>For a Group assigment we had to create a mobile application which displays data from the NASA Astronomy Picture of the Day archive which is made public via an open API request. The link will take you to Github where you can view the files or download them if you wish to install the application.</p>
         <ul>
           <li><a href="https://github.com/SuperTedCode/NASA---APOD">NASA - APOD</a></li><a class="pdf" href="/Git-Repository-Proj/AppDev2Assessments/NASA.pdf" target="_blank">Names Assessment pdf</a>
-          <li><a href="/Git-Repository-Proj/WebDevAssessments/table-json-js.html">Football table using JS</a></li>
-          <li><a href="/Git-Repository-Proj/WebDevAssessments/table-json-jQuery.html">Football table using jQuery</a></li>
-          <li><a href="/Git-Repository-Proj/WebDevAssessments/seasons-json.html">Seasons table</a></li>
-          <a class="pdf" href="/Git-Repository-Proj/WebDevAssessments/PremierLeagueAssessment.pdf" target="_blank">Premier League and Seasons Assessment pdf</a>
         </ul>
       </div>
     </div>

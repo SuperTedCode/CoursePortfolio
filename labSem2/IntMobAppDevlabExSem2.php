@@ -1,11 +1,11 @@
 <?php
-$page_title = 'Lab Excercises for Cross Platform Mobile Application Development';
+$page_title = 'Lab Excercises for Integrated Mobile Application Development';
 include ('../includes/header.html');
 ?>
 
 <div class="jumbotron">
   <div class="container text-center">
-    <h2>Cross Platform Mobile Application Development</h2>
+    <h2>Integrated Mobile Application Development</h2>
     <h3>Lab excercises for semester one: Choose from the list below.</h3>
   </div>
 </div>
@@ -34,9 +34,12 @@ include ('../includes/header.html');
       <div class="caption">
       <p>To run copy the code hightlighted in red to codepen.io/pen. Be sure to copy all the HTML code from the <b>first lab</b> to the HTML window and the JS code in the JS window. Then just <b>edit the HTML within the body tags</b> and the JS code if needed to run each lab. the top line in JS is needed to state the angular module "myApp" which is referenced in the HTML body tag. Also the script tag on lab1 is needed for all labs to add the angularJS plugin.</p>
       	<ul>
-      		<li><a class="pdf" href="/Git-Repository-Proj/labSem2/AngularJSExpressionsDirectivesExercises.pdf" target="_blank">Expressions and Directives</a></li>
-      		<li><a class="pdf" href="/Git-Repository-Proj/labSem2/AngularJSControllersFiltersExercises.pdf" target="_blank">Controllers and Filters</a></li>
-          <li><a class="pdf" href="/Git-Repository-Proj/labSem1/AppDevJavaScriptLab3.pdf" target="_blank"> Lab3.pdf</a></li>
+          <li><a href="/Git-Repository-Proj/labSem2/LabsHTML/angularJSLab1.html">Expressions and Directives</a></li>
+      		<a class="pdf" href="/Git-Repository-Proj/labSem2/AngularJSLab1ExpressDirect.pdf" target="_blank">Expressions and Directives PDF</a>
+          <li><a href="/Git-Repository-Proj/labSem2/LabsHTML/angularJSLab2.html">Controllers and Filters</a></li>
+      		<a class="pdf" href="/Git-Repository-Proj/labSem2/AngularJSLab2ControlFilters.pdf" target="_blank">Controllers and Filters PDF</a>
+          <li><a href="/Git-Repository-Proj/labSem2/LabsHTML/angularJSLab3.html">Services</a></li>
+          <a class="pdf" href="/Git-Repository-Proj/labSem2/AngularJSLab3Services.pdf" target="_blank">Services PDF</a>
       	</ul>
       </div>
     </div>

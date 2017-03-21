@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+    <title>AngularJS - Expressions and Built-in Directives</title>
+    <!-- adding the header HTML to the webpage -->
+    <p style="font-family:Georgia, serif; padding:1em; padding-left:55px; background-color: #a4c2f4; text-align: center; border: solid 2px; color: white;"><a href="/Git-Repository-Proj/labSem2/IntMobAppDevlabExSem2.php" style="color: white;">Back to Lab excercises</a></p>
+    <!-- end of header HTML -->
+    <script src="/Git-Repository-Proj/js/jquery-3.1.1.js"></script>
+    <script src="/Git-Repository-Proj/labSem2/js/angularJSLab1.js" type="text/javascript" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+ </head>
+
+<body ng-app="myApp">
+<hr>
+<h2>Ex1 - Expressions</h2>
+ {{ 1 + 3 }}<br>
+ {{"asdf" + 7}}<br>
+ {{"Hello " + "there"}}<br>
+ {{10*3}}<br>
+ The Length of your name is: {{"james".length}}<br>
+ {{ x =['a','b','c','d','e']}}<br>
+ The 2nd element is {{ x[1]}}
+<hr>
+
+<h2>Ex2 - – Built-in Directives</h2>
+<div ng-init="a='Hello'">
+ String: {{ a }}<br>
+</div>
+<hr>
+
+<h2>Ex3</h2>
+<div ng-init="qty=100">
+ number: {{ qty+20}}
+</div>
+<hr>
+
+<h2>Ex4</h2>
+<div>
+ <input type="text" ng-model=b placeholder="Enter your name:"></input><br>
+ hello {{b}}
+</div>
+<hr>
+
+<h2>Ex5</h2>
+<div>
+Enter Element:
+<input type="text" ng-model="c" ng-init="c=0">
+{{ y=["a","b","c","d","e","f"] }}<br>
+Array Element {{c}} is <b style="color: blue;">{{ y[c] }}</b>
+</div>
+<hr>
+
+<h2>Ex6</h2>
+<div ng-init="d=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']">
+<h4>
+Display months:
+</h4>
+<div ng-repeat = "month in d">
+{{month}}
+</div>
+</div>
+<hr>
+
+<h2>Ex7</h2>
+<div ng-init="e=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']">
+ What month number were you born in?
+<input type="number" ng-model="z" ng-init="z=1"></input>
+<br>
+That month was {{e[z-1]}}
+</div>
+<hr>
+
+<h2>Ex8 - Custom Directives</h2>
+<div>
+<my-gmit></my-gmit>
+<gmit-science></gmit-science>
+<div science-courses></div>
+<ul>
+<li>BSc. Computer Science</li>
+<li>BSc. Web Technologies & Programming</li>
+</ul>
+</div>
+</body>
+</HTML>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+    <title>AngularJS - Services</title>
+    <!-- adding the header HTML to the webpage -->
+    <p style="font-family:Georgia, serif; padding:1em; padding-left:55px; background-color: #a4c2f4; text-align: center; border: solid 2px; color: white;"><a href="/Git-Repository-Proj/labSem2/IntMobAppDevlabExSem2.php" style="color: white;">Back to Lab excercises</a></p>
+    <!-- end of header HTML -->
+    <link rel="stylesheet" href="/Git-Repository-Proj/labSem2/cssSem2/angular.css"/>
+    <script src="/Git-Repository-Proj/js/jquery-3.1.1.js"></script>
+    <script src="/Git-Repository-Proj/labSem2/js/angularJSLab3.js" type="text/javascript" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+ </head>
+
+<body ng-app="starter">
+
+<header class="bar-stable">
+   <h1 class="title">Lab7-Services</h1>
+</header>
+
+ <content>
+<div ng-controller="enterUserAge">
+ <h2>Excercise 1:</h2>
+ <label>Enter Your Age</label> <input type='number' ng-model="uAge"><button ng-click="getAge(uAge)">Get Age</button>
+<p>Next Year you'll be: {{newAge}}</p>
+</div>
+
+<div ng-controller="StudentController">
+<h2>Excercise 2:</h2>
+<h4>Students</h4>
+<table>
+<tr><th>Name</th>
+    <th>Address</th>
+    <th>DOB</th>
+    <th>Age</th>
+</tr>
+<tr ng-repeat="student in students">
+    <td>{{student.name}}</td>
+    <td>{{student.address}}</td>
+    <td>{{student.dob | date}}</td>
+    <td>{{getAge(student.dob)}}</td>
+</tr>
+</table>
+</div>
+
+<div ng-controller="GMITController">
+<h4>GMIT</h4>
+<p>Name: {{GMIT.name}}</p>
+<p>Address: {{GMIT.address}}</p>
+<p>Founded: {{GMIT.founded | date :'MMMM yyyy'}}</p>
+<p>Age: {{age(GMIT.founded)}}</p>
+</div>
+
+<div ng-controller="USPresidents">
+<h2>Excercise 3:</h2>
+<table><tbody>
+<tr class="presHeader"><th>Presidents</th>
+    <th>Party</th>
+    <th>Start of Presidency</th>
+    <th>End of Presidency</th>
+    <th>Vice President</th>
+</tr>
+ <tr ng-repeat="president in list">
+    <td>{{president.president}}</td>
+    <td>{{president.party}}</td>
+    <td>{{president.startOfPresidency | date :"yyyy"}}</td>
+    <td>{{president.endOfPresidency}}</td>
+    <td>{{president.VP}}</td>
+</tr>
+</tbody></table>
+</div>
+</content>
+
+</body>
+</HTML>

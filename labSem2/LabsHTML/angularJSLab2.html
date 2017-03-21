@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+    <title>AngularJS - Controllers and Filters</title>
+    <!-- adding the header HTML to the webpage -->
+    <p style="font-family:Georgia, serif; padding:1em; padding-left:55px; background-color: #a4c2f4; text-align: center; border: solid 2px; color: white;"><a href="/Git-Repository-Proj/labSem2/IntMobAppDevlabExSem2.php" style="color: white;">Back to Lab excercises</a></p>
+    <!-- end of header HTML -->
+    <script src="/Git-Repository-Proj/js/jquery-3.1.1.js"></script>
+    <script src="/Git-Repository-Proj/labSem2/js/angularJSLab2.js" type="text/javascript" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+ </head>
+
+<body ng-app="myApp" ng-controller="Controller">
+<hr>
+
+<h2>Ex4 - Controllers</h2>
+<div ng-controller="MainController">
+    {{myName}}
+    {{myName.length}}
+    Age = {{age}}
+<hr>
+
+<h2>Ex5</h2>
+<b>Popluation:</b> {{Connaught.popluation}}
+<br>
+<b>Number of Counties:</b> {{Connaught.numCounties}}
+<ol>
+    <li ng-repeat="x in Connaught.counties">
+    {{x}}
+    </li>
+</ol>
+<b>Largest Town:</b> {{Connaught.largestTown | uppercase}}
+<br>
+<b>Founded:</b> {{Connaught.founded | date :'GG y'}}
+<br>
+<b>Average Industrial Wage:</b> {{Connaught.avgIndWage | currency :"Eur ": 2}}
+<hr>
+
+<h2>Ex6</h2>
+<input type="text" ng-model="person"></input>
+  <button ng-click="addName(person)">Add Name</button>
+  <br><br>
+  <button ng-click="removeName()">Remove Last Name</button>
+  <br><br>
+  {{list.length}} Names:
+  <ol>
+  <li ng-repeat="name in list">{{name}} ({{name.length}})</li>
+  </ol>
+<hr>
+
+<h2>Ex7</h2>
+Bread {{bread | currency:"€"}}<button ng-click="addBread()">Add</button>
+<button ng-click="removeBread()">Remove</button>
+<br>
+Wine {{wine|currency:"€"}} <button ng-click="addWine()">Add</button>
+<button ng-click="removeWine()">Remove</button>
+<br>
+Cheese {{cheese|currency:"€"}}<button ng-click="addCheese()">Add</button>
+<button ng-click="removeCheese()">Remove</button>
+<br><br>
+Bread Items: {{bCount}} Wine Items: {{wCount}} Cheese Items: {{cCount}}
+<br>
+Total Price: {{total | number : 2}}
+<hr>
+
+<h2>Ex8</h2>
+<button ng-click="getName()">Get Name</button>{{string}}
+<br>
+First Char: {{char}}
+<br>
+Length: {{num}}
+<br>
+Show every<input id="input" type="number"></input>Character(s)<button ng-click="go()">Go</button>
+<br>{{charGo}}
+<hr>
+
+</div>
+
+</body>
+</HTML>
