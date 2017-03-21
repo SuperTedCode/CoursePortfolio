@@ -1,0 +1,13 @@
+/* Lab 1 */
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+/* For lab 2 */
+#countyHeader {
+	color: red;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+    <title>AngularJS - Expressions and Built-in Directives</title>
+    <!-- adding the header HTML to the webpage -->
+    <p style="font-family:Georgia, serif; padding:1em; padding-left:55px; background-color: #a4c2f4; text-align: center; border: solid 2px; color: white;"><a href="/Git-Repository-Proj/labSem2/IntMobAppDevlabExSem2.php" style="color: white;">Back to Lab excercises</a></p>
+    <!-- end of header HTML -->
+    <link rel="stylesheet" href="/Git-Repository-Proj/labSem2/cssSem2/ionic.css"/>
+    <script src="/Git-Repository-Proj/js/jquery-3.1.1.js"></script>
+    <script src="/Git-Repository-Proj/labSem2/js/ionicLab2.js" type="text/javascript" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+ </head>
+
+<body ng-app="examQ2">
+      <header>
+        <h1>Connaught Population App</h1>
+      </header>
+      <div ng-controller='homeCtrl'>
+      <table>
+      <tbody>
+      <tr id="countyHeader">
+        <th>County</th>
+        <th>Population</th>
+        <th>Increase/Decrease Population</th>
+      </tr>
+      <tr ng-repeat="county in connaught">
+        <td>{{county.name}}</td>
+        <td>{{county.population | number : 0}}</td>
+        <td><button ng-click="add(county.population,county.name)">+</button><button ng-click="sub(county.population,county.name)">-</button></td>
+      </tr>
+      </tbody>
+      </table>
+      </div>
+</body>
+
+</HTML>

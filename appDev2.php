@@ -7,7 +7,7 @@ include ('includes/header.html');
   <div class="container text-center">
     <h1>Integrated Mobile Application Development</h1>
     <h2>Semister two</h2>
-    <p>As with Semester one we created some projects and group assessments for this module using Ionic. This includes a NASA picture of the day android application and a To Do List application using myjson to store data on a thrid party resource. The lab excercises are done using "jsBin.com" for java script, "codepen.io/pen" for the angularJS excercises and finally ionic.</p>
+    <p>As with Semester one we created some projects and group assessments for this module using Ionic. This includes a NASA picture of the day android application and a Online reminder application using myjson to store data on a thrid party resource. The lab excercises are done using "jsBin.com" for java script, "codepen.io/pen" for the angularJS excercises and finally ionic.</p>
   </div>
 </div>
 
@@ -17,7 +17,7 @@ include ('includes/header.html');
     <div class="thumbnail">
       <a href="labSem2/IntMobAppDevlabExSem2.php"><h4 class="title">Lab exercises</h4></a>
       <div class="caption">
-      	<p>The labs included here cover Objects, Events, local & session storage, AJAX and PHP. The PHP labs will be accessing the database 'web_apps' which you should have created when following the read me installation guide before installing the website. If you have not created this database please do so now.</p>
+      	<p>The following labs cover JavaScript , AngularJS and some ionic applications. The Ionic labs have been edited to run on the broswer here so you do not have to install Ionic.</p>
       </div>
     </div>
     </div>
@@ -36,11 +36,10 @@ include ('includes/header.html');
 
     <div class="col-sm-4">
     <div class="thumbnail">
-      <a href="https://github.com/SuperTedCode/FineFoodsAtHome"><h4 class="title">Fine Foods At Home Website</h4></a>
+      <a href="https://github.com/SuperTedCode/SingleOnlineReminder"><h4 class="title">Single Online Reminder</h4></a>
       <div class="caption">
-      	<p><b><a class="pdf" href="/Git-Repository-Proj/labSem2/WebpplicationDevelopmentProject.pdf" target="_blank">Website Project 2016 pdf</a></b><br>
-        The link above will take you to my GitHub account where the project is available to download. Please follow the installation giude carefully.<br>
-        <em>This website was tested on Chrome. Also as external style sheets are in use, connection to the internet is needed when testing the site.<em></p>
+      	<p><b><a class="pdf" href="/Git-Repository-Proj/OnlineReminder/ReminderProjectApp.pdf" target="_blank">Project pdf</a></b><br>
+        The link above will take you to my GitHub account where the project is available to download. You can look over the files in the JS folder to see how the application works. You can use the APK file to run the application on a compatable phone or an Android emulator like bluestacks. This application was developed using Ionic for Android@5.1.1</p>
       </div>
     </div>
     </div>

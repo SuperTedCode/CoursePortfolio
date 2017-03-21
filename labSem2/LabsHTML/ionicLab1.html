@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+    <title>Ionic New Employee lab</title>
+    <!-- adding the header HTML to the webpage -->
+    <p style="font-family:Georgia, serif; padding:1em; padding-left:55px; background-color: #a4c2f4; text-align: center; border: solid 2px; color: white;"><a href="/Git-Repository-Proj/labSem2/IntMobAppDevlabExSem2.php" style="color: white;">Back to Lab excercises</a></p>
+    <!-- end of header HTML -->
+    <link rel="stylesheet" href="/Git-Repository-Proj/labSem2/cssSem2/ionic.css"/>
+    <script src="/Git-Repository-Proj/js/jquery-3.1.1.js"></script>
+    <script src="/Git-Repository-Proj/labSem2/js/ionicLab1.js" type="text/javascript" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+ </head>
+
+<body ng-app="exam">
+
+<div ng-controller="homeCtrl">
+<nav>
+  <h1>New Employees</h1>
+</nav>
+<content><br>
+Name: <br>
+<input name="name" ng-model="name"><br>
+Town: <br>
+<input name="town" ng-model="town"><br>
+County: <br>
+<input name="county" ng-model="county"><br>
+DOB: MM/DD/YYYY<br>
+<input name="dob" ng-model="dob"><br>
+salary: <br>
+<input name="salary" ng-model="salary"><br>
+<br>
+<button ng-click="addEmp(name,town,county,dob,salary)">Add Employee</button><br>
+<table>
+<tbody>
+<t2>
+  <th>Name</th>
+  <th>Town</th>
+  <th>County</th>
+  <th>DOB</th>
+  <th>Age</th>
+  <th>Salary</th>
+</t2>
+<tr ng-repeat="emp in employees">
+  <td>{{emp.name}}</td>
+  <td>{{emp.town}}</td>
+  <td>{{emp.county | uppercase}}</td>
+  <td>{{emp.dob | date : 'EEE MMM dd yyyy'}}</td>
+  <td>{{getAge(emp.dob)}}</td>
+  <td>{{emp.salary | currency : 'Euros ' : 2}}</td>
+</tr>
+</tbody>
+</table>
+</content>
+</div>
+
+</body>
+</HTML>

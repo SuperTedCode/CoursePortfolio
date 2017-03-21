@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+    <title>Display past Taoiseachs</title>
+    <!-- adding the header HTML to the webpage -->
+    <p style="font-family:Georgia, serif; padding:1em; padding-left:55px; background-color: #a4c2f4; text-align: center; border: solid 2px; color: white;"><a href="/Git-Repository-Proj/labSem2/IntMobAppDevlabExSem2.php" style="color: white;">Back to Lab excercises</a></p>
+    <!-- end of header HTML -->
+    <script src="/Git-Repository-Proj/js/jquery-3.1.1.js"></script>
+    <script src="/Git-Repository-Proj/labSem2/js/ionicLab3.js" type="text/javascript" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+ </head>
+
+  <body ng-app="starter" ng-controller="TaoisighCtrl">
+
+  <header>
+        <h1>Taoisigh</h1>
+  </header>
+      <content>
+        <div ng-repeat="taoiseach in taoisigh">
+          <h3>{{taoiseach.name}}, {{taoiseach.party}}</h3>
+          <img width="50px" ng-src="{{taoiseach.imgURL}}">
+        </div>
+      </content>
+
+  </body>
+</HTML>
