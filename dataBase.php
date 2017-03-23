@@ -5,50 +5,41 @@ include ('includes/header.html');
 
 <div class="jumbotron">
   <div class="container text-center">
-    <h1>Web Application Development</h1>
+    <h1>Database Technologies</h1>
     <h2>Semister two</h2>
-    <p>I have included some labs, Assessments and the final project for this module. Again the project is accsssed through Github.</p>
+    <p>For this module we focused on relational database systems. We also looked at real world business models and went through the steps of understanding how to convert one to a working vitural model by designing tables on a relational database and its attributes. We also went over Codd's rules and set about proving each rule on a RDB model by running different queries on the "xampp" MariaDB server.</p>
   </div>
 </div>
 
 <div class="container-fluid">
 <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-6">
     <div class="thumbnail">
-      <a href="labSem2/WebDevLabExSem2.php"><h4 class="title">Lab exercises</h4></a>
+      <h4 class="title">mySQL</h4>
       <div class="caption">
-      	<p>The labs included here cover Objects, Events, local & session storage, AJAX and PHP. The PHP labs will be accessing the database 'web_apps' which you should have created when following the read me installation guide before installing the website. If you have not created this database please do so now.</p>
-      </div>
-    </div>
-    </div>
-
-    <div class="col-sm-4">
-    <div class="thumbnail">
-      <h4 class="title">Assessments</h4>
-      <div class="caption">
-        <p>There are two links included below. For the first Assessment we had to create a webpage to store 'names objects' into local storage. Another page was to then list the names from storage in a table. Also when a row in the table is clicked, that row is to be removed from both the table and local storage.<hr>
-        The second assessment is on AJAX, jQuery and JSONP. JSON data of the Premier League table is retrieved using AJAX. The first link is done using JavaScript while the second link is done using jQuery. Please look over the js files for ref ".../WebDevAssessments/js/xxxTable.js"<br>The last link is for the Seasons list with animation. Here the json data is retrieved from a server on a different domain. This is my solution in jQuery to retrieve the data using JSONP. See pdf below for server address.</p>
+      	<p>To start we had to create a test database. Below you will find a link to the EMPDEPT.sql file which you will need to run to build the tables and data into your test database. Simply download the file and import it to your database via "phpMyAdmin" on xampp. The second link is for the SQL problem sheet containing the questions and answers on how to perform different mySQL queries against the same database.</p>
         <ul>
-          <li><a href="/Git-Repository-Proj/WebDevAssessments/addNames.html">Ex2 Add, Display and remove names in loalstorage</a></li><a class="pdf" href="/Git-Repository-Proj/WebDevAssessments/javascript_assessmentNames.pdf" target="_blank">Names Assessment pdf</a>
-          <li><a href="/Git-Repository-Proj/WebDevAssessments/table-json-js.html">Football table using JS</a></li>
-          <li><a href="/Git-Repository-Proj/WebDevAssessments/table-json-jQuery.html">Football table using jQuery</a></li>
-          <li><a href="/Git-Repository-Proj/WebDevAssessments/seasons-json.html">Seasons table</a></li>
-          <a class="pdf" href="/Git-Repository-Proj/WebDevAssessments/PremierLeagueAssessment.pdf" target="_blank">Premier League and Seasons Assessment pdf</a>
+          <a href="/Git-Repository-Proj/labSem2/EMPDEPT.sql">EMPDEPT.sql file</a><br>
+          <a class="pdf" target="_blank" href="/Git-Repository-Proj/labSem2/mySQLQ&A.pdf">SQL problem sheet</a>
         </ul>
       </div>
     </div>
     </div>
 
-    <div class="col-sm-4">
+    <div class="col-sm-6">
     <div class="thumbnail">
-      <a href="https://github.com/SuperTedCode/FineFoodsAtHome"><h4 class="title">Fine Foods At Home Website</h4></a>
+      <h4 class="title">Car parts Database model</h4>
       <div class="caption">
-      	<p><b><a class="pdf" href="/Git-Repository-Proj/labSem2/WebpplicationDevelopmentProject.pdf" target="_blank">Website Project 2016 pdf</a></b><br>
-        The link above will take you to my GitHub account where the project is available to download. Please follow the installation giude carefully.<br>
-        <em>This website was tested on Chrome. Also as external style sheets are in use, connection to the internet is needed when testing the site.<em></p>
+        <p>For this project we had to design a relational database based on one of a given list of business models. I choose to design my RDB on the Car parts ordering model. Below is a report on the project which contains the sql statements to create the tables and its attributes with primary and foreign keys. It also cantains the data to populate the tables. Three customers have five orders. This data was populated manually into the table and tested by running serveral queries. Finally there are some queries which were run againts the database to prove Codds rules.</p>
+        <ul>
+          <a class="pdf" href="/Git-Repository-Proj/CarPartsDatabase/Project.pdf" target="_blank">Project pdf</a><br>
+          <a class="pdf" href="/Git-Repository-Proj/CarPartsDatabase/Report.pdf" target="_blank">Car Parts report</a><br>
+          <a class="pdf" href="/Git-Repository-Proj/CarPartsDatabase/CarPartsSchema.pdf" target="_blank">Database Schema</a>
+        </ul>
       </div>
     </div>
     </div>
+
 </div>
 </div>
 

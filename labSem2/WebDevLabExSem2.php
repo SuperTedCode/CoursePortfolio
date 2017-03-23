@@ -5,7 +5,7 @@ include ('../includes/header.html');
 
 <div class="jumbotron">
   <div class="container text-center">
-    <h2>Web Application Development</h2>
+    <a href="/Git-Repository-Proj/webDev2.php"><h2>Web Application Development</h2></a>
     <h3>Lab excercises for semester two:</h3>
   </div>
 </div>
