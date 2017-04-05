@@ -6,8 +6,8 @@ include ('includes/header.html');
 <div class="jumbotron">
   <div class="container text-center">
     <h1>Cross Platform Mobile Application Development</h1>
-    <h2>Semister one</h2>
-    <p>Below you will find a link to my Shopping Tracker and Recipes projects on GitHub as well as some excercises carried out in the labs during semister one of this module. Regards the projects on GitHub you will need to download the files and install ionic locally to run them in your broswer. If you have an android phone you can download the APK file and install the application on your device. Alternatively if you have software like bluestacks to run APKs on your pc you can install it there also.</p>
+    <h2>semester one</h2>
+    <p>Below you will find a link to my Shopping Tracker and Recipes projects on GitHub as well as some excercises carried out in the labs during semester one of this module. Regards the projects on GitHub you will need to download the files and install ionic locally to run them in your broswer. If you have an android phone you can download the APK file and install the application on your device. Alternatively if you have software like bluestacks to run APKs on your pc you can install it there also.</p>
   </div>
 </div>
 

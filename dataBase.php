@@ -6,7 +6,7 @@ include ('includes/header.html');
 <div class="jumbotron">
   <div class="container text-center">
     <h1>Database Technologies</h1>
-    <h2>Semister two</h2>
+    <h2>semester two</h2>
     <p>For this module we focused on relational database systems. We also looked at real world business models and went through the steps of understanding how to convert one to a working vitural model by designing tables on a relational database and its attributes. We also went over Codd's rules and set about proving each rule on a RDB model by running different queries on the "xampp" MariaDB server.</p>
   </div>
 </div>

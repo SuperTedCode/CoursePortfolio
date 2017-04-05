@@ -6,8 +6,8 @@ include ('includes/header.html');
 <div class="jumbotron">
   <div class="container text-center">
     <h1>Introduction to Web Programming</h1>
-    <h2>Semister one</h2>
-    <p>Below you will find a simple sports shopping website created as part of an assigment, A dynamic recipies website as part of a project and some excercises carried out in the labs during semister one. </p>
+    <h2>semester one</h2>
+    <p>Below you will find a simple sports shopping website created as part of an assigment, A dynamic recipies website as part of a project and some excercises carried out in the labs during semester one. </p>
   </div>
 </div>
 

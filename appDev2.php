@@ -6,7 +6,7 @@ include ('includes/header.html');
 <div class="jumbotron">
   <div class="container text-center">
     <h1>Integrated Mobile Application Development</h1>
-    <h2>Semister two</h2>
+    <h2>semester two</h2>
     <p>As with Semester one we created some projects and group assessments for this module using Ionic. This includes a NASA picture of the day android application and a Online reminder application using myjson to store data on a thrid party resource. The lab excercises are done using "jsBin.com" for java script, "codepen.io/pen" for the angularJS excercises and finally ionic.</p>
   </div>
 </div>

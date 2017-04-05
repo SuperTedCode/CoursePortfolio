@@ -6,7 +6,7 @@ include ('includes/header.html');
 <div class="jumbotron">
   <div class="container text-center">
     <h1>Web Application Development</h1>
-    <h2>Semister two</h2>
+    <h2>semester two</h2>
     <p>I have included some labs, Assessments and the final project for this module. Again the project is accsssed through Github.</p>
   </div>
 </div>

@@ -6,7 +6,7 @@ include ('includes/header.html');
 <div class="jumbotron">
   <div class="container text-center">
     <h1>System and Network Technologies</h1>
-    <h2>Semister one</h2>
+    <h2>semester one</h2>
     <p>For this module we went through some lectures on the operating system and looked at the comparison of some of the best know todate. We also looked into virtualization by VMware and with our student accounts on Microsofts <b>Azure</b> we built some virtual machaines on windows and unix operating systems. We also looked at the windows command line where we creating some batch files and with scheduled jobs we would send system information via eamil.</p>
   </div>
 </div>
