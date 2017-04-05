@@ -1,8 +1,11 @@
-p{color:red;}
+.p{color:red;}
 ul#HTMLLab1 {border:solid black;}
 p.para{text-decoration: underline}
 img{opacity:0.5}
-[id]{text-transform: uppercase;}
+
+/* [id]{text-transform: uppercase;}  Line reworked below as to only affect the lab section of the page*/
+.id {text-transform: uppercase;}
+
 .webstuff{background-color: blue;}
 
 /*This styles the table*/
