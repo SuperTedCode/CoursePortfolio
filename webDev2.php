@@ -43,7 +43,7 @@ include ('includes/header.html');
     <div class="thumbnail">
       <a href="https://github.com/SuperTedCode/FineFoodsAtHome"><h4 class="title">Fine Foods At Home Website</h4></a>
       <div class="caption">
-      	<p><b><a class="pdf" href="/Git-Repository-Proj/labSem2/WebpplicationDevelopmentProject.pdf" target="_blank">Website Project 2016 pdf</a></b><br>
+      	<p><b><a class="pdf" href="/Git-Repository-Proj/labSem2/WebApplicationDevelopmentProject.pdf" target="_blank">Website Project 2016 pdf</a></b><br>
         The link above will take you to my GitHub account where the project is available to download. Please follow the installation giude carefully.<br>
         <em>This website was tested on Chrome. Also as external style sheets are in use, connection to the internet is needed when testing the site.<em></p>
       </div>
