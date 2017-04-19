@@ -6,8 +6,8 @@ include ('includes/header.html');
 <div class="jumbotron">
   <div class="container text-center">
     <h1>Cross Platform Mobile Application Development</h1>
-    <h2>semester one</h2>
-    <p>Below you will find a link to my Shopping Tracker and Recipes projects on GitHub as well as some excercises carried out in the labs during semester one of this module. Regards the projects on GitHub you will need to download the files and install ionic locally to run them in your broswer. If you have an android phone you can download the APK file and install the application on your device. Alternatively if you have software like bluestacks to run APKs on your pc you can install it there also.</p>
+    <h2>Semester one</h2>
+    <p>Below you will find a link to my Shopping Tracker and Recipes projects on GitHub as well as some exercises carried out in the labs during semester one of this module. Regards the projects on GitHub you will need to download the files and install ionic locally to run them in your browser. If you have an android phone you can download the APK file and install the application on your device. Alternatively if you have software like BlueStacks to run APKs on your pc you can install it there also.</p>
   </div>
 </div>
 
@@ -17,7 +17,7 @@ include ('includes/header.html');
     <div class="thumbnail">
       <a href="labSem1/CrossMobAppDevlabExSem1.php"><h4 class="title">Lab exercises</h4></a>
       <div class="caption">
-      	<p>Just like the other module in Web Prog we had some lab excercises in <b><em>HTML, CSS, JavaScript & jQuery.</em></b> Most of the labs were in JavaScript. One website we used for some of the labs was <b>jsbin.com</b>. These labs have been added in txt format for you to copy and paste into the site to test and run for yourself. The JavaScript labs have the code hightlighted in yellow in each pdf.</p>
+      	<p>Just like the other module in Web Programming we had some lab exercises in <b><em>HTML, CSS, JavaScript & jQuery.</em></b> Most of the labs were in JavaScript. One website we used for some of the labs was <b>jsbin.com</b>. These labs have been added in txt format for you to copy and paste into the site to test and run for yourself. The JavaScript labs have the code highlighted in yellow in each pdf.</p>
       </div>
     </div>
     </div>
@@ -42,7 +42,7 @@ include ('includes/header.html');
 
     <div class="col-sm-4">
     <div class="thumbnail">
-      <a href="https://github.com/SuperTedCode/Recipes"><h4 class="title">Recipes Project</h4></a>
+      <a href="https://github.com/SuperTedCode/RecipesPhoneApp"><h4 class="title">Recipes Project</h4></a>
       <div class="caption">
       	<p><b>For this Project I had to design, develop and test an android mobile application using the Ionic framework and which included the following features;</b></p>
         <ul>
@@ -52,7 +52,7 @@ include ('includes/header.html');
           <li>Unlike the Shopping Tracker app, this app should store data so that when the user exits the app and restarts it previously entered data will be available to him or her</li>
           <li>The app should use two features provided by the mobile device (e.g. contact list, camera, GPS, etc)</li>
         </ul>
-        <p style="color: red;"><b>Have a look at the ReadMeManual document first when downloading the files from  GitHub</b></p>
+        <p style="color: red;"><b>Have a look at the User Manual document first when downloading the files from  GitHub</b></p>
       </div>
     </div>
     </div>

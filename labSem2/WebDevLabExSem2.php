@@ -6,7 +6,7 @@ include ('../includes/header.html');
 <div class="jumbotron">
   <div class="container text-center">
     <a href="/Git-Repository-Proj/webDev2.php"><h2>Web Application Development</h2></a>
-    <h3>Lab excercises for semester two:</h3>
+    <h3>Lab exercises for semester two:</h3>
   </div>
 </div>
 
@@ -55,10 +55,10 @@ include ('../includes/header.html');
 
     <div class="col-sm-3">
     <div class="thumbnail">
-      <h4 class="title">Jquery</h4>
+      <h4 class="title">JQuery</h4>
       <div class="caption">
       	<ul>
-      		<li><a href="/Git-Repository-Proj/labSem2/labsHTML/jQueryLab1.html">Lab1 (fadein/remove) </a></li><a class="pdf" href="/Git-Repository-Proj/labSem2/First_jQuery_Lab.pdf" target="_blank"> Lab1.pdf</a>
+      		<li><a href="/Git-Repository-Proj/labSem2/labsHTML/jQueryLab1.html">Lab1 (fade-in/remove) </a></li><a class="pdf" href="/Git-Repository-Proj/labSem2/First_jQuery_Lab.pdf" target="_blank"> Lab1.pdf</a>
       		<li><a href="/Git-Repository-Proj/labSem2/labsHTML/jQueryLab2.html">Lab2 (looping) </a></li><a class="pdf" href="/Git-Repository-Proj/labSem2/Second_jQuery_Lab.pdf" target="_blank"> Lab2.pdf</a>
       		<li><a href="/Git-Repository-Proj/labSem2/labsHTML/jQueryLab3validateCreditCard.html">Lab3 (Credit Card) </a></li><a class="pdf" href="/Git-Repository-Proj/labSem2/Third_jQuery_Lab.pdf" target="_blank"> Lab3.pdf</a>
       	</ul>

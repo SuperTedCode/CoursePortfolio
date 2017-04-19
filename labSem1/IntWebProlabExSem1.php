@@ -6,7 +6,7 @@ include ('../includes/header.html');
 <div class="jumbotron">
   <div class="container text-center">
     <a href="/Git-Repository-Proj/webPro1.php"><h2>Introduction to Web Programming</h2></a>
-    <h3>Lab excercises for semester one: Choose from the list below.</h3>
+    <h3>Lab exercises for semester one: Choose from the list below.</h3>
   </div>
 </div>
 
